@@ -1,0 +1,355 @@
+{
+  "uri": "datamodel/entityTypes/Invoice",
+  "displayLabelAttributes": [
+    "InvoiceNumber",
+    "IssueDate",
+    "DueDate",
+    "Customer.Name",
+    "Business.Name"
+  ],
+  "attributes": [
+    {
+      "uri": "datamodel/entityTypes/Invoice/attributes/InvoiceNumber",
+      "name": "InvoiceNumber",
+      "label": "Invoice Number",
+      "type": "String",
+      "matchAttribute": true,
+      "isDisplayLabel": true,
+      "searchable": true
+    },
+    {
+      "uri": "datamodel/entityTypes/Invoice/attributes/IssueDate",
+      "name": "IssueDate",
+      "label": "Issue Date",
+      "type": "Date",
+      "matchAttribute": true,
+      "isDisplayLabel": true,
+      "searchable": true
+    },
+    {
+      "uri": "datamodel/entityTypes/Invoice/attributes/DueDate",
+      "name": "DueDate",
+      "label": "Due Date",
+      "type": "Date",
+      "matchAttribute": true,
+      "isDisplayLabel": true,
+      "searchable": true
+    },
+    {
+      "uri": "datamodel/entityTypes/Invoice/attributes/Phone",
+      "name": "Phone",
+      "label": "Phone",
+      "type": "Nested",
+      "matchAttribute": true,
+      "isDisplayLabel": false,
+      "searchable": false,
+      "attributes": [
+        {
+          "uri": "datamodel/entityTypes/Invoice/attributes/Phone/attributes/CustomerPhone",
+          "name": "CustomerPhone",
+          "label": "CustomerPhone",
+          "type": "String",
+          "matchAttribute": true,
+          "isDisplayLabel": true,
+          "searchable": true
+        },
+        {
+          "uri": "datamodel/entityTypes/Invoice/attributes/Phone/attributes/BusinessPhone",
+          "name": "BusinessPhone",
+          "label": "BusinessPhone",
+          "type": "String",
+          "matchAttribute": true,
+          "isDisplayLabel": true,
+          "searchable": true
+        }
+      ]
+    },
+    {
+      "uri": "datamodel/entityTypes/Invoice/attributes/Email",
+      "name": "Email",
+      "label": "Email",
+      "type": "Nested",
+      "matchAttribute": true,
+      "isDisplayLabel": false,
+      "searchable": false,
+      "attributes": [
+        {
+          "uri": "datamodel/entityTypes/Invoice/attributes/Email/attributes/CustomerEmail",
+          "name": "CustomerEmail",
+          "label": "CustomerEmail",
+          "type": "String",
+          "matchAttribute": true,
+          "isDisplayLabel": true,
+          "searchable": true
+        },
+        {
+          "uri": "datamodel/entityTypes/Invoice/attributes/Email/attributes/BusinessEmail",
+          "name": "BusinessEmail",
+          "label": "BusinessEmail",
+          "type": "String",
+          "matchAttribute": true,
+          "isDisplayLabel": true,
+          "searchable": true
+        }
+      ]
+    },
+    {
+      "uri": "datamodel/entityTypes/Invoice/attributes/Address",
+      "name": "Address",
+      "label": "Address",
+      "type": "Nested",
+      "matchAttribute": true,
+      "isDisplayLabel": false,
+      "searchable": false,
+      "attributes": [
+        {
+          "uri": "datamodel/entityTypes/Invoice/attributes/Address/attributes/CustomerAddress",
+          "name": "CustomerAddress",
+          "label": "CustomerAddress",
+          "type": "String",
+          "matchAttribute": true,
+          "isDisplayLabel": true,
+          "searchable": true
+        },
+        {
+          "uri": "datamodel/entityTypes/Invoice/attributes/Address/attributes/BusinessAddress",
+          "name": "BusinessAddress",
+          "label": "BusinessAddress",
+          "type": "String",
+          "matchAttribute": true,
+          "isDisplayLabel": true,
+          "searchable": true
+        }
+      ]
+    },
+    {
+      "uri": "datamodel/entityTypes/Invoice/attributes/ID",
+      "name": "ID",
+      "label": "ID",
+      "type": "Nested",
+      "matchAttribute": true,
+      "isDisplayLabel": false,
+      "searchable": false,
+      "attributes": [
+        {
+          "uri": "datamodel/entityTypes/Invoice/attributes/ID/attributes/CustomerID",
+          "name": "CustomerID",
+          "label": "CustomerID",
+          "type": "String",
+          "matchAttribute": true,
+          "isDisplayLabel": true,
+          "searchable": true
+        },
+        {
+          "uri": "datamodel/entityTypes/Invoice/attributes/ID/attributes/BusinessID",
+          "name": "BusinessID",
+          "label": "BusinessID",
+          "type": "String",
+          "matchAttribute": true,
+          "isDisplayLabel": true,
+          "searchable": true
+        },
+        {
+          "uri": "datamodel/entityTypes/Invoice/attributes/ID/attributes/InvoiceID",
+          "name": "InvoiceID",
+          "label": "InvoiceID",
+          "type": "String",
+          "matchAttribute": true,
+          "isDisplayLabel": true,
+          "searchable": true
+        },
+        {
+          "uri": "datamodel/entityTypes/Invoice/attributes/ID/attributes/LineItemsID",
+          "name": "LineItemsID",
+          "label": "LineItemsID",
+          "type": "String",
+          "matchAttribute": true,
+          "isDisplayLabel": true,
+          "searchable": true
+        }
+      ]
+    },
+    {
+      "uri": "datamodel/entityTypes/Invoice/attributes/Customer",
+      "name": "Customer",
+      "label": "Customer",
+      "type": "Nested",
+      "matchAttribute": true,
+      "isDisplayLabel": false,
+      "searchable": false,
+      "attributes": [
+        {
+          "uri": "datamodel/entityTypes/Invoice/attributes/Customer/attributes/ID",
+          "name": "ID",
+          "label": "ID",
+          "type": "String",
+          "matchAttribute": true,
+          "isDisplayLabel": false,
+          "searchable": false
+        },
+        {
+          "uri": "datamodel/entityTypes/Invoice/attributes/Customer/attributes/Name",
+          "name": "Name",
+          "label": "Name",
+          "type": "String",
+          "matchAttribute": true,
+          "isDisplayLabel": true,
+          "searchable": true
+        },
+        {
+          "uri": "datamodel/entityTypes/Invoice/attributes/Customer/attributes/Address",
+          "name": "Address",
+          "label": "Address",
+          "type": "String",
+          "matchAttribute": true,
+          "isDisplayLabel": true,
+          "searchable": false
+        },
+        {
+          "uri": "datamodel/entityTypes/Invoice/attributes/Customer/attributes/Phone",
+          "name": "Phone",
+          "label": "Phone",
+          "type": "String",
+          "matchAttribute": true,
+          "isDisplayLabel": true,
+          "searchable": true
+        },
+        {
+          "uri": "datamodel/entityTypes/Invoice/attributes/Customer/attributes/Email",
+          "name": "Email",
+          "label": "Email",
+          "type": "String",
+          "matchAttribute": true,
+          "isDisplayLabel": true,
+          "searchable": true
+        }
+      ]
+    },
+    {
+      "uri": "datamodel/entityTypes/Invoice/attributes/Business",
+      "name": "Business",
+      "label": "Business",
+      "type": "Nested",
+      "matchAttribute": true,
+      "isDisplayLabel": false,
+      "searchable": false,
+      "attributes": [
+        {
+          "uri": "datamodel/entityTypes/Invoice/attributes/Business/attributes/ID",
+          "name": "ID",
+          "label": "ID",
+          "type": "String",
+          "matchAttribute": true,
+          "isDisplayLabel": false,
+          "searchable": false
+        },
+        {
+          "uri": "datamodel/entityTypes/Invoice/attributes/Business/attributes/Name",
+          "name": "Name",
+          "label": "Name",
+          "type": "String",
+          "matchAttribute": true,
+          "isDisplayLabel": true,
+          "searchable": true
+        },
+        {
+          "uri": "datamodel/entityTypes/Invoice/attributes/Business/attributes/Address",
+          "name": "Address",
+          "label": "Address",
+          "type": "String",
+          "matchAttribute": true,
+          "isDisplayLabel": true,
+          "searchable": false
+        },
+        {
+          "uri": "datamodel/entityTypes/Invoice/attributes/Business/attributes/Phone",
+          "name": "Phone",
+          "label": "Phone",
+          "type": "String",
+          "matchAttribute": true,
+          "isDisplayLabel": true,
+          "searchable": true
+        },
+        {
+          "uri": "datamodel/entityTypes/Invoice/attributes/Business/Email",
+          "name": "Email",
+          "label": "Email",
+          "type": "String",
+          "matchAttribute": true,
+          "isDisplayLabel": true,
+          "searchable": true
+        }
+      ]
+    },
+    {
+      "uri": "datamodel/entityTypes/Invoice/attributes/LineItems",
+      "name": "LineItems",
+      "label": "Line Items",
+      "type": "Nested",
+      "matchAttribute": false,
+      "isDisplayLabel": false,
+      "searchable": false,
+      "attributes": [
+        {
+          "uri": "datamodel/entityTypes/Invoice/attributes/LineItems/attributes/ID",
+          "name": "ID",
+          "label": "ID",
+          "type": "String",
+          "matchAttribute": true,
+          "isDisplayLabel": false,
+          "searchable": false
+        },
+        {
+          "uri": "datamodel/entityTypes/Invoice/attributes/LineItems/attributes/description",
+          "name": "description",
+          "label": "Description",
+          "type": "String",
+          "matchAttribute": true,
+          "isDisplayLabel": false,
+          "searchable": true
+        },
+        {
+          "uri": "datamodel/entityTypes/Invoice/attributes/LineItems/attributes/quantity",
+          "name": "quantity",
+          "label": "Quantity",
+          "type": "Number",
+          "matchAttribute": true,
+          "isDisplayLabel": false,
+          "searchable": false
+        },
+        {
+          "uri": "datamodel/entityTypes/Invoice/attributes/LineItems/attributes/price",
+          "name": "price",
+          "label": "Price",
+          "type": "Number",
+          "matchAttribute": true,
+          "isDisplayLabel": false,
+          "searchable": false
+        }
+      ]
+    }
+  ],
+
+  "matchAttributes": {
+    "simpleAttributes": [
+      "InvoiceNumber",
+      "IssueDate",
+      "DueDate",
+      "Customer.ID",
+      "Customer.Name",
+      "Customer.Address",
+      "Customer.Phone",
+      "Customer.Email",
+      "Business.ID",
+      "Business.Name",
+      "Business.Address",
+      "Business.Phone",
+      "Business.Email",
+      "LineItems.ID",
+      "LineItems.description",
+      "LineItems.quantity",
+      "LineItems.price"
+    ],
+    "complexAttributes": ["Customer", "Business", "LineItems"]
+  }
+}
