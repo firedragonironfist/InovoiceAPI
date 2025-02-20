@@ -4,7 +4,8 @@ Please use the below command in terminal to run the code after installing all th
 
 uvicorn main:app --reload
 
-Example request Body to test the API:
+### Example request Body to test the API:
+```json
 {
   "data": {
     "InvoiceNumber": "6642141254",
@@ -19,3 +20,4 @@ Example request Body to test the API:
     "PaymentTerms": "Upon Receipt"
   }
 }
+
